@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Typography
+
+/// Regular font family
+/// @type List
+$body-font-stack: 'Outfit', sans-serif;
+
+/// Colors
+
+/// Primary
+
+/// Soft Blue
+/// @type Color
+$soft-blue: hsl(215, 51%, 70%);
+
+/// Cyan
+/// @type Color
+$cyan: hsl(178, 100%, 50%);
+
+/// Neutral
+
+/// Very Dark Blue (Main BG)
+/// @type Color
+$main-bg-dark-blue: hsl(217, 54%, 11%);
+
+/// Very Dark Blue (Card BG)
+/// @type Color
+$card-bg-dark-blue: hsl(216, 50%, 16%);
+
+/// Very Dark Blue (Line)
+/// @type Color
+$line-dark-blue: hsl(215, 32%, 27%);
+
+/// White
+/// @type Color
+$white: hsl(0, 0%, 100%);
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'https://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
