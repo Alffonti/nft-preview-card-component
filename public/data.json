@@ -2,8 +2,15 @@
   "title": "Equilibrium #3429",
   "description": "Our Equilibrium collection promotes balance and calm.",
   "image": "https://raw.githubusercontent.com/Alffonti/nft-preview-card-component/main/src/assets/images/image-equilibrium.jpg",
-  "price": "0.041",
+  "price": {
+    "cryptocurrency": "Ethereum",
+    "abbreviation": "ETH",
+    "logo": "https://raw.githubusercontent.com/Alffonti/nft-preview-card-component/main/src/assets/images/icon-ethereum.svg",
+    "value": "0.041"
+  },
   "deadline": "3 days",
-  "avatar": "https://raw.githubusercontent.com/Alffonti/nft-preview-card-component/main/src/assets/images/image-avatar.png",
-  "author": "Jules Wyvern"
+  "author": {
+    "name": "Jules Wyvern",
+    "avatar": "https://raw.githubusercontent.com/Alffonti/nft-preview-card-component/main/src/assets/images/image-avatar.png"
+  }
 }
