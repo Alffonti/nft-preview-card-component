@@ -1,3 +1,83 @@
 .nft-card {
   background-color: $card-bg-dark-blue;
+  max-width: px-to-rem(318px);
+  padding: px-to-rem(25px);
+  border-radius: px-to-rem(13px);
+
+  &__image-container {
+    position: relative;
+    width: 100%;
+    border-radius: px-to-rem(9px);
+    overflow: hidden;
+    cursor: pointer;
+    margin-block-end: px-to-rem(28px);
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .3s ease;
+      background-color: transparentize($color: $cyan, $amount: 0.5);
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+
+    .icon {
+      color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  }
+
+  &__title {
+    margin-block-end: px-to-rem(24px);
+  }
+
+  &__description {
+    margin-block-end: px-to-rem(24px);
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-block-end: px-to-rem(24px);
+    margin-block-end: px-to-rem(24px);
+    border-bottom: 1px solid $line-dark-blue;
+    font-size: px-to-rem(14px);
+
+    .detail {
+      display: flex;
+      align-items: center;
+      gap: px-to-rem(6px);
+
+      .value {
+        color: $cyan;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__author-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    font-size: px-to-rem(14px);
+
+    & img {
+      width: px-to-rem(32px);
+      height: px-to-rem(32px);
+      border: 1px solid $white;
+      border-radius: 50%;
+    }
+  }
 }
